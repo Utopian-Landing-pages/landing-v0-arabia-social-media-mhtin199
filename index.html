@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabia Social Media - Transform Your Digital Presence</title>
+    <meta name="description" content="Arabia Social Media helps businesses grow their online presence with expert social media management, content creation, and digital marketing strategies.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Arabia Social Media - Transform Your Digital Presence">
+    <meta property="og:description" content="Expert social media management and digital marketing services to grow your business online.">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/social-media,marketing">
+    <meta property="og:url" content="https://arabiasocialmedia.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff0017',
+                        secondary: '#ff0096',
+                        accent: '#ff6900'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Arabia Social Media",
+        "description": "Expert social media management and digital marketing services",
+        "url": "https://arabiasocialmedia.com",
+        "logo": "https://source.unsplash.com/400x400/logo,social-media",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff0017 0%, #ff0096 50%, #ff6900 100%);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-content.active {
+            max-height: 200px;
+        }
+        
+        .loading-spinner {
+            display: none;
+        }
+        
+        .loading .loading-spinner {
+            display: inline-block;
+        }
+        
+        .loading .button-text {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://source.unsplash.com/150x50/logo,social-media" alt="Arabia Social Media" class="h-8 w-auto">
+                    <span class="ml-2 text-xl font-bold text-gray-900">Arabia Social Media</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-primary transition-colors">Features</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+                    <button data-project-link class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
+                        Get Started
+                    </button>
+                </div>
+                <button class="md:hidden p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://source.unsplash.com/1920x1080/social-media,marketing,business" alt="Hero Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-bg opacity-90"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    Transform Your
+                    <span class="block text-yellow-300">Digital Presence</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Boost your brand's social media impact with our expert management, content creation, and strategic marketing solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button data-project-link class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                        Start Your Journey
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-all">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center fade-in">
+                    <div class="text-4xl md:text-5xl font-bold text-primary counter" data-target="500">0</div>
+                    <div class="text-gray-600 mt-2">Happy Clients</div>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="text-4xl md:text-5xl font-bold text-secondary counter" data-target="1200">0</div>
+                    <div class="text-gray-600 mt-2">Projects Completed</div>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="text-4xl md:text-5xl font-bold text-accent counter" data-target="98">0</div>
+                    <div class="text-gray-600 mt-2">Success Rate %</div>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="text-4xl md:text-5xl font-bold text-primary counter" data-target="24">0</div>
+                    <div class="text-gray-600 mt-2">Hours Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Why Choose Arabia Social Media?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We combine creativity, strategy, and technology to deliver exceptional social media results for your business.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover-lift fade-in border border-gray-100">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Lightning Fast Results</h3>
+                    <p class="text-gray-600 leading-relaxed">Get your social media campaigns up and running in record time with our streamlined processes and expert team.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover-lift fade-in border border-gray-100">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3
